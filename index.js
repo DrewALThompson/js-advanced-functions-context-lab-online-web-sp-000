@@ -52,3 +52,11 @@ let allWagesFor = function () {
     return payable
 }
 
+function calculatePayroll(records){
+  let allWages = records.map(record => allWagesFor(record));
+  return allWages.reduce((total, wage) => wage + total);
+}
+
+function findEmployeeByFirstName(records, name){
+  return records.find(employee => employee.firstName === name);
+}
