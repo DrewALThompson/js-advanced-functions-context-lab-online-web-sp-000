@@ -2,10 +2,10 @@
 function createEmployeeRecord(record){
   class record{
     constructor(record){
-      this.firstName = firstName;
-      this.familyName = familyName;
-      this.title = title;
-      this.payPerHour = payPerHour;
+      this.firstName = record[0];
+      this.familyName = record[1];
+      this.title = record[2];
+      this.payPerHour = record[3];
       this.timeInEvents = [];
       this.timeOutEvents = []
     }
