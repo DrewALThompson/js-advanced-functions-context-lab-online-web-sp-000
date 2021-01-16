@@ -25,6 +25,7 @@ function createTimeInEvent(dateStamp){
 
 function createTimeOutEvent(dateStamp){
   this.timeOutEvents.push(dateStamper('TimeOut', dateStamp));
+  console.log(this)
   return this;
 }
 
