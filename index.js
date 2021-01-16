@@ -14,7 +14,7 @@ function createEmployeeRecords(arr){
   return arr.map(createEmployeeRecord);
 }
 
-function 
+function dateStamper()
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
