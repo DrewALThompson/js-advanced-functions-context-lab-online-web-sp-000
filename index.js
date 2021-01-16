@@ -1,12 +1,11 @@
 /* Your Code Here */
 function createEmployeeRecord(arr){
-  function Employee(arr){
-    this.firstName = arr[0];
-    this.familyName = arr[1];
-    this.title = arr[2]
-    this.payPerHour = arr[3];
-    this.timeInEvents = [];
-    this.timeOutEvents = [];
+  this.firstName = arr[0];
+  this.familyName = arr[1];
+  this.title = arr[2]
+  this.payPerHour = arr[3];
+  this.timeInEvents = [];
+  this.timeOutEvents = [];
   }
 }
 /*
