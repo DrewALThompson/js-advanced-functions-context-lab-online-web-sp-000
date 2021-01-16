@@ -1,13 +1,14 @@
 /* Your Code Here */
-function createEmployeeRecord(record){}
+function createEmployeeRecord(record){
   class record{
     constructor(record){
       this.firstName = firstName;
-    this.familyName = familyName;
-    this.title = title;
-    this.payPerHour = payPerHour;
-    this.timeInEvents = [];
-    this.timeOutEvents = []
+      this.familyName = familyName;
+      this.title = title;
+      this.payPerHour = payPerHour;
+      this.timeInEvents = [];
+      this.timeOutEvents = []
+    }
   }
 }
 /*
