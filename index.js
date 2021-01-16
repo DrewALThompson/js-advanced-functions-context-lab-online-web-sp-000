@@ -18,7 +18,7 @@ function dateStamper(time, dateStamp){
   return {type: time, date: dateStamp.substring(0, 10), hour: parseInt(dateStamp.slice(-4))}
 }
 
-function createTimeInEvent()
+function createTimeInEvent(){}
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
