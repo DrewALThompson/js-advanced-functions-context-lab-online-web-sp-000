@@ -21,6 +21,7 @@ function dateStamper(time, dateStamp){
 function createTimeInEvent(dateStamp){
   this.timeInEvents.push(dateStamper('TimeIn', dateStamp));
   return this;
+  return thing if
 }
 
 function createTimeOutEvent(dateStamp){
