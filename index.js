@@ -20,6 +20,8 @@ function dateStamper(time, dateStamp){
 
 function createTimeInEvent(){}
 
+function createTimeOutEvent(){}
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
