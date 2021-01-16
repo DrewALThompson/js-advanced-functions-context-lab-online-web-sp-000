@@ -1,14 +1,11 @@
 /* Your Code Here */
-function createEmployeeRecord(arr){
-  new Employee(arr){
-    this.firstName = arr[0];
-    this.familyName = arr[1];
-    this.title = arr[2]
-    this.payPerHour = arr[3];
-    this.timeInEvents = [];
-    this.timeOutEvents = [];
-    }
-  }
+function createEmployeeRecord(...arr){
+  this.firstName = arr[0];
+  this.familyName = arr[1];
+  this.title = arr[2]
+  this.payPerHour = arr[3];
+  this.timeInEvents = [];
+  this.timeOutEvents = [];
 }
 /*
  We're giving you this function. Take a look at it, you might see some usage
