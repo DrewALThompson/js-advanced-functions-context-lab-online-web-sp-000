@@ -23,7 +23,10 @@ function createTimeInEvent(record, dateStamp){
   return record;
 }
 
-function createTimeOutEvent(){}
+function createTimeOutEvent(record, dateStamp){
+  record.timeOutEvents.push(dateStamper('TimeOut', dateStamp));
+  return record;
+}
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
