@@ -20,7 +20,6 @@ function dateStamper(time, dateStamp){
 
 function createTimeInEvent(dateStamp){
   this.timeInEvents.push(dateStamper('TimeIn', dateStamp));
-  console.log(this)
   return this;
 }
 
