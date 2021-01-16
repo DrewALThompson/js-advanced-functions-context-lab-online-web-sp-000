@@ -1,5 +1,5 @@
 /* Your Code Here */
-function createEmployeeRecord([firstName, familyName, title, payPerHour]){
+function createEmployeeRecord(arr = [firstName, familyName, title, payPerHour]){
   this.firstName = arr[0];
   this.familyName = arr[1];
   this.title = arr[2];
