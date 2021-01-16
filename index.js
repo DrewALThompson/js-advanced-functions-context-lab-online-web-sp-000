@@ -28,6 +28,17 @@ function createTimeOutEvent(record, dateStamp){
   return record;
 }
 
+function hoursWorkedOnDate(record, workDate){
+  let timeIn = record.timeInEvents.find(event => event.date === workDate).hour;
+  let timeOut = record.timeOutEvents.find(event => event.date === workDate).hour;
+  return (timeOut - timeIn)/100;
+}
+
+function wagesEarnedOnDate(record, workDate){
+  const money = record.payPerHour;
+  return money * hoursWorkedOnDate(record, workDate);
+}
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
@@ -35,7 +46,7 @@ let allWagesFor = function () {
 
     let payable = eligibleDates.reduce(function (memo, d) {
         return memo + wagesEarnedOnDate.call(this, d)
-    }.bind(this), 0) // <== Hm, why did we need to add bind() there? We'll discuss soon!
+    }.bind(this), 0) 
 
     return payable
 }
