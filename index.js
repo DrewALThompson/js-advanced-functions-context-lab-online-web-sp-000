@@ -31,14 +31,15 @@ function createTimeOutEvent(dateStamp){
 function hoursWorkedOnDate(workDate){
   let timeIn = this.timeInEvents.find(event => event.date === workDate);
   console.log(workDate);
+  console.log(timeIn.date)
   let timeOut = this.timeOutEvents.find(event => event.date === workDate);
   return (timeOut - timeIn)/100;
 }
 
 function wagesEarnedOnDate(workDate){
-  const money = this.payPerHour;
-  let hours = hoursWorkedOnDate.call(this, workDate);
-  return money * hours;
+  // const money = this.payPerHour;
+  // let hours = hoursWorkedOnDate.call(this, workDate);
+  // return money * hours;
 }
 
 let allWagesFor = function () {
