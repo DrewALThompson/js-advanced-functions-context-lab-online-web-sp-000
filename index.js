@@ -18,14 +18,14 @@ function dateStamper(time, dateStamp){
   return {type: time, date: dateStamp.substring(0, 10), hour: parseInt(dateStamp.slice(-4))}
 }
 
-function createTimeInEvent(record, dateStamp){
+function createTimeInEvent(dateStamp){
   this.timeInEvents.push(dateStamper('TimeIn', dateStamp));
   return this;
 }
 
-function createTimeOutEvent(record, dateStamp){
-  record.timeOutEvents.push(dateStamper('TimeOut', dateStamp));
-  return record;
+function createTimeOutEvent(dateStamp){
+  this.timeOutEvents.push(dateStamper('TimeOut', dateStamp));
+  return this;
 }
 
 function hoursWorkedOnDate(record, workDate){
