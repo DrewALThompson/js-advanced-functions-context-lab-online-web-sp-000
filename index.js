@@ -18,7 +18,10 @@ function dateStamper(time, dateStamp){
   return {type: time, date: dateStamp.substring(0, 10), hour: parseInt(dateStamp.slice(-4))}
 }
 
-function createTimeInEvent(){}
+function createTimeInEvent(record, dateStamp){
+  record.timeInEvents.push(dateStamper('TimeIn', dateStamp));
+  return record;
+}
 
 function createTimeOutEvent(){}
 
