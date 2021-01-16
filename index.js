@@ -1,7 +1,11 @@
 /* Your Code Here */
 class record{
   constructor(firstName, familyName, title, payPerHour){
-    this.firstName = firstName
+    this.firstName = firstName;
+    this.familyName = familyName;
+    this.title = title;
+    this.payPerHour = payPerHour;
+    this.
   }
 }
 /*
