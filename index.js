@@ -2,7 +2,7 @@
 function createEmployeeRecord(arr){
   this.firstName = arr[0];
   this.familyName = arr[1];
-  this.title = arr[2]
+  this.title = arr[2];
   this.payPerHour = arr[3];
   this.timeInEvents = [];
   this.timeOutEvents = [];
