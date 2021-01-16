@@ -5,7 +5,8 @@ class record{
     this.familyName = familyName;
     this.title = title;
     this.payPerHour = payPerHour;
-    this.
+    this.timeInEvents = [];
+    this.timeOutEvents = []
   }
 }
 /*
