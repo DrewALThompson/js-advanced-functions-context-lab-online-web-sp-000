@@ -53,7 +53,7 @@ let allWagesFor = function () {
 }
 
 function calculatePayroll(records){
-  let allWages = records.map(record => allWagesFor(record));
+  let allWages = records.map(record => allWagesFor.call(record));
   return allWages.reduce((total, wage) => wage + total);
 }
 
