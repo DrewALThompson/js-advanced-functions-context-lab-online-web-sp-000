@@ -20,6 +20,7 @@ function dateStamper(time, dateStamp){
 
 function createTimeInEvent(dateStamp){
   this.timeInEvents.push(dateStamper('TimeIn', dateStamp));
+  console.log(this)
   return this;
 }
 
@@ -30,8 +31,6 @@ function createTimeOutEvent(dateStamp){
 
 function hoursWorkedOnDate(workDate){
   let timeIn = this.timeInEvents.find(event => event.date === workDate);
-  console.log(workDate);
-  console.log(this.timeInEvents[0])
   let timeOut = this.timeOutEvents.find(event => event.date === workDate);
   return (timeOut - timeIn)/100;
 }
