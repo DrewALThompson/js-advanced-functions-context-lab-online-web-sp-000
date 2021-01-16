@@ -1,6 +1,6 @@
 /* Your Code Here */
 function createEmployeeRecord(arr){
-  console.log(arr)
+  
   this.firstName = arr[0];
   this.familyName = arr[1];
   this.title = arr[2]
