@@ -1,6 +1,7 @@
 /* Your Code Here */
 function createEmployeeRecord(array){
-  
+  this.firstName = array[0];
+  this.firstName = array[0];
 }
 /*
  We're giving you this function. Take a look at it, you might see some usage
