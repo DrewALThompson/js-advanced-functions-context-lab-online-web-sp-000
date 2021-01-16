@@ -10,9 +10,11 @@ function createEmployeeRecord(arr){
   return record;
 }
 
-function createEmployeeRecords(arrs){
-  arrs.map()
+function createEmployeeRecords(arr){
+  return arr.map(createEmployeeRecord);
 }
+
+
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
