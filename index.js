@@ -28,15 +28,15 @@ function createTimeOutEvent(dateStamp){
   return this;
 }
 
-function hoursWorkedOnDate(record, workDate){
-  let timeIn = record.timeInEvents.find(event => event.date === workDate).hour;
-  let timeOut = record.timeOutEvents.find(event => event.date === workDate).hour;
+function hoursWorkedOnDate(workDate){
+  let timeIn = this.timeInEvents.find(event => event.date === workDate).hour;
+  let timeOut = this.timeOutEvents.find(event => event.date === workDate).hour;
   return (timeOut - timeIn)/100;
 }
 
-function wagesEarnedOnDate(record, workDate){
-  const money = record.payPerHour;
-  return money * hoursWorkedOnDate(record, workDate);
+function wagesEarnedOnDate(workDate){
+  const money = this.payPerHour;
+  return money * this.hoursWorkedOnDate(workDate);
 }
 
 let allWagesFor = function () {
