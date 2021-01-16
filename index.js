@@ -10,8 +10,8 @@ function createEmployeeRecord(arr){
   return record;
 }
 
-function createEmployeeRecord(arrs){
-  
+function createEmployeeRecords(arrs){
+  arrs.map()
 }
 
 let allWagesFor = function () {
