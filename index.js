@@ -15,8 +15,10 @@ function createEmployeeRecords(arr){
 }
 
 function dateStamper(time, dateStamp){
-  
+  return {type: time, date: dateStamp.substring(0, 10), hour: parseInt(dateStamp.slice(-4))}
 }
+
+function timeInEv
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
